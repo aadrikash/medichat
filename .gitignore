@@ -205,3 +205,21 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+
+
+# Ignore API keys and environment variables
+.env
+
+# Ignore large data folders (your PDFs)
+data/
+research/data/
+
+# Ignore Python/Jupyter junk
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Ignore virtual environment
+venv/
