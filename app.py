@@ -75,14 +75,10 @@ def chat():
     
     return str(response["answer"])
 
-if __name__ == '__main__':
-    # Default Flask port is 5000, video suggested 8080
-    app.run(host="0.0.0.0", port=9000, debug=True)
-
-
-
-
-
+if __name__ == "__main__":
+    # port 8080 use karte hain aur reloader off kar dete hain 
+    # taaki Windows par koi conflict na ho
+    app.run(host="0.0.0.0", port=8080, debug=True, use_reloader=False)
     print("1. Starting App...")
 load_dotenv()
 print("2. Env loaded.")
